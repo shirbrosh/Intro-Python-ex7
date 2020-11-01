@@ -1,0 +1,54 @@
+shir_brosh
+316124767
+Shir Brosh
+
+I discussed the exercise with: Ortal Glatt, Gadi Fleischer, Daniel Shookroun.
+
+=============================
+=  README for ex7:   =
+=============================
+print_to_n, print_reversed, has_divisor_smaller_than, is_prime, factorial, exp_n_x, play_hanoi,
+print_sequences, print_no_repetition_sequences, parentheses_string, parentheses, up_and_right,
+flood_fill.
+
+==================
+=  Description: =
+==================
+
+print_to_n- A function that prints each number from 1 to n, if given a number n
+    lower from 1 the function wont print anything.
+print_reversed- A function that prints each number from n to 1, if given a number n
+    lower from 1 the function wont print anything.
+has_divisor_smaller_than- A function that checks if the input n has a divider (different from 1)
+    smaller from the input i- this function will be used in the next function:
+is_prime- A function that returns True if the input n is prime or False otherwise.
+factorial- A function that calculate factorial of the number n- this function will be used
+    in the next function:
+exp_n_x- A function that calculate the exponent amount of n and x.
+play_hanoi- A function that plays the 'hanoi tower' game and wins.
+print_sequences- A function that receives a list of chars and prints every combination of
+    strings in length n containing the chars from the list.
+print_no_repetition_sequences- A function that receives a list of chars and prints every
+    combination of strings in length n containing the chars from the list without repetition.
+parentheses_string - A function that receives n- number of parentheses pairs and adds to a
+    list every legal combination of n pairs, legal combination means that each
+    open parentheses have a close parentheses- this function will be used in the next function:
+parentheses- A function that receives n- number of parentheses pairs, creates a new
+    empty list and adds to the list all the legal parentheses combination using
+    the function parentheses_string and returns the list.
+up_and_right- A function that receives the number of steps allowed right and left and
+    print every legal combinations of steps to preform, legal combination means
+    only n times right and k times left.
+flood_fill- A function that receives an image and a start coordinate and changes
+    every other coordinate that can be reached from the start (by moving only
+    up, down, right and left) from "." to "*".
+
+Run time analysis-
+    1.is prime- this function calls a recursive function that runs from (sqrt(n)+1) down
+        to n<=2 each run runs on -1 numbers which is why the run time will be O(sqrt(n)).
+    2.print_no_repetition_sequences- this function has a for loop that runs on the char_list
+        length and then operates a recursion n times, which means for each length we run n times
+        which is why the run time will be O(len^n).
+    3.flood_fill- worse case is that the matrix is empty (filled only with ".") in this case
+    will have to change every cell to "*", if the matrix's size is n*n then the function will
+    make O(n*n)=O(n^2).
