@@ -2,9 +2,9 @@ shir_brosh
 316124767
 Shir Brosh
 
-=============================
+============================
 =  README for ex7:   =
-=============================
+============================
 print_to_n, print_reversed, has_divisor_smaller_than, is_prime, factorial, exp_n_x, play_hanoi,
 print_sequences, print_no_repetition_sequences, parentheses_string, parentheses, up_and_right,
 flood_fill.
